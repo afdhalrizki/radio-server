@@ -1,0 +1,40 @@
+D:\workspaces\SDS\s60\FCS_ReBorn\FCS_ReBorn\bin\Debug\FCS_ReBorn.exe
+D:\workspaces\SDS\s60\FCS_ReBorn\FCS_ReBorn\bin\Debug\FCS_ReBorn.pdb
+D:\workspaces\SDS\s60\FCS_ReBorn\FCS_ReBorn\obj\Debug\FCS_ReBorn.csprojResolveAssemblyReference.cache
+D:\workspaces\SDS\s60\FCS_ReBorn\FCS_ReBorn\obj\Debug\FCS_ReBorn.Form1.resources
+D:\workspaces\SDS\s60\FCS_ReBorn\FCS_ReBorn\obj\Debug\FCS_ReBorn.Properties.Resources.resources
+D:\workspaces\SDS\s60\FCS_ReBorn\FCS_ReBorn\obj\Debug\FCS_ReBorn.csproj.GenerateResource.Cache
+D:\workspaces\SDS\s60\FCS_ReBorn\FCS_ReBorn\obj\Debug\FCS_ReBorn.exe
+D:\workspaces\SDS\s60\FCS_ReBorn\FCS_ReBorn\obj\Debug\FCS_ReBorn.pdb
+D:\S60\Toradex\Project\SYSTEM AKHIR KAYANYA SIH\FCS_ReBorn\FCS_ReBorn\FCS_ReBorn\bin\Debug\FCS_ReBorn.exe
+D:\S60\Toradex\Project\SYSTEM AKHIR KAYANYA SIH\FCS_ReBorn\FCS_ReBorn\FCS_ReBorn\bin\Debug\FCS_ReBorn.pdb
+D:\S60\Toradex\Project\SYSTEM AKHIR KAYANYA SIH\FCS_ReBorn\FCS_ReBorn\FCS_ReBorn\obj\Debug\FCS_ReBorn.csprojResolveAssemblyReference.cache
+D:\S60\Toradex\Project\SYSTEM AKHIR KAYANYA SIH\FCS_ReBorn\FCS_ReBorn\FCS_ReBorn\obj\Debug\FCS_ReBorn.Form1.resources
+D:\S60\Toradex\Project\SYSTEM AKHIR KAYANYA SIH\FCS_ReBorn\FCS_ReBorn\FCS_ReBorn\obj\Debug\FCS_ReBorn.Properties.Resources.resources
+D:\S60\Toradex\Project\SYSTEM AKHIR KAYANYA SIH\FCS_ReBorn\FCS_ReBorn\FCS_ReBorn\obj\Debug\FCS_ReBorn.csproj.GenerateResource.Cache
+D:\S60\Toradex\Project\SYSTEM AKHIR KAYANYA SIH\FCS_ReBorn\FCS_ReBorn\FCS_ReBorn\obj\Debug\FCS_ReBorn.exe
+D:\S60\Toradex\Project\SYSTEM AKHIR KAYANYA SIH\FCS_ReBorn\FCS_ReBorn\FCS_ReBorn\obj\Debug\FCS_ReBorn.pdb
+D:\S60\Toradex\Project\SYSTEM AKHIR KAYANYA SIH\AFTER_281120\FCS_ReBorn\FCS_ReBorn\FCS_ReBorn\bin\Debug\FCS_ReBorn.exe
+D:\S60\Toradex\Project\SYSTEM AKHIR KAYANYA SIH\AFTER_281120\FCS_ReBorn\FCS_ReBorn\FCS_ReBorn\bin\Debug\FCS_ReBorn.pdb
+D:\S60\Toradex\Project\SYSTEM AKHIR KAYANYA SIH\AFTER_281120\FCS_ReBorn\FCS_ReBorn\FCS_ReBorn\obj\Debug\FCS_ReBorn.csprojResolveAssemblyReference.cache
+D:\S60\Toradex\Project\SYSTEM AKHIR KAYANYA SIH\AFTER_281120\FCS_ReBorn\FCS_ReBorn\FCS_ReBorn\obj\Debug\FCS_ReBorn.Form1.resources
+D:\S60\Toradex\Project\SYSTEM AKHIR KAYANYA SIH\AFTER_281120\FCS_ReBorn\FCS_ReBorn\FCS_ReBorn\obj\Debug\FCS_ReBorn.Properties.Resources.resources
+D:\S60\Toradex\Project\SYSTEM AKHIR KAYANYA SIH\AFTER_281120\FCS_ReBorn\FCS_ReBorn\FCS_ReBorn\obj\Debug\FCS_ReBorn.csproj.GenerateResource.Cache
+D:\S60\Toradex\Project\SYSTEM AKHIR KAYANYA SIH\AFTER_281120\FCS_ReBorn\FCS_ReBorn\FCS_ReBorn\obj\Debug\FCS_ReBorn.exe
+D:\S60\Toradex\Project\SYSTEM AKHIR KAYANYA SIH\AFTER_281120\FCS_ReBorn\FCS_ReBorn\FCS_ReBorn\obj\Debug\FCS_ReBorn.pdb
+D:\workspaces\SDS\s60\ReBorn\FCS_ReBorn_2911_BETA2\FCS_ReBorn\FCS_ReBorn\FCS_ReBorn\bin\Debug\FCS_ReBorn.exe
+D:\workspaces\SDS\s60\ReBorn\FCS_ReBorn_2911_BETA2\FCS_ReBorn\FCS_ReBorn\FCS_ReBorn\bin\Debug\FCS_ReBorn.pdb
+D:\workspaces\SDS\s60\ReBorn\FCS_ReBorn_2911_BETA2\FCS_ReBorn\FCS_ReBorn\FCS_ReBorn\obj\Debug\FCS_ReBorn.csprojResolveAssemblyReference.cache
+D:\workspaces\SDS\s60\ReBorn\FCS_ReBorn_2911_BETA2\FCS_ReBorn\FCS_ReBorn\FCS_ReBorn\obj\Debug\FCS_ReBorn.Form1.resources
+D:\workspaces\SDS\s60\ReBorn\FCS_ReBorn_2911_BETA2\FCS_ReBorn\FCS_ReBorn\FCS_ReBorn\obj\Debug\FCS_ReBorn.Properties.Resources.resources
+D:\workspaces\SDS\s60\ReBorn\FCS_ReBorn_2911_BETA2\FCS_ReBorn\FCS_ReBorn\FCS_ReBorn\obj\Debug\FCS_ReBorn.csproj.GenerateResource.Cache
+D:\workspaces\SDS\s60\ReBorn\FCS_ReBorn_2911_BETA2\FCS_ReBorn\FCS_ReBorn\FCS_ReBorn\obj\Debug\FCS_ReBorn.exe
+D:\workspaces\SDS\s60\ReBorn\FCS_ReBorn_2911_BETA2\FCS_ReBorn\FCS_ReBorn\FCS_ReBorn\obj\Debug\FCS_ReBorn.pdb
+D:\S60\Toradex\Project\SYSTEM AKHIR KAYANYA SIH\06-12-2020\06-12-2020\FCS_ReBorn_2911_BETA2\FCS_ReBorn\FCS_ReBorn\FCS_ReBorn\bin\Debug\FCS_ReBorn.exe
+D:\S60\Toradex\Project\SYSTEM AKHIR KAYANYA SIH\06-12-2020\06-12-2020\FCS_ReBorn_2911_BETA2\FCS_ReBorn\FCS_ReBorn\FCS_ReBorn\bin\Debug\FCS_ReBorn.pdb
+D:\S60\Toradex\Project\SYSTEM AKHIR KAYANYA SIH\06-12-2020\06-12-2020\FCS_ReBorn_2911_BETA2\FCS_ReBorn\FCS_ReBorn\FCS_ReBorn\obj\Debug\FCS_ReBorn.csprojResolveAssemblyReference.cache
+D:\S60\Toradex\Project\SYSTEM AKHIR KAYANYA SIH\06-12-2020\06-12-2020\FCS_ReBorn_2911_BETA2\FCS_ReBorn\FCS_ReBorn\FCS_ReBorn\obj\Debug\FCS_ReBorn.Form1.resources
+D:\S60\Toradex\Project\SYSTEM AKHIR KAYANYA SIH\06-12-2020\06-12-2020\FCS_ReBorn_2911_BETA2\FCS_ReBorn\FCS_ReBorn\FCS_ReBorn\obj\Debug\FCS_ReBorn.Properties.Resources.resources
+D:\S60\Toradex\Project\SYSTEM AKHIR KAYANYA SIH\06-12-2020\06-12-2020\FCS_ReBorn_2911_BETA2\FCS_ReBorn\FCS_ReBorn\FCS_ReBorn\obj\Debug\FCS_ReBorn.csproj.GenerateResource.Cache
+D:\S60\Toradex\Project\SYSTEM AKHIR KAYANYA SIH\06-12-2020\06-12-2020\FCS_ReBorn_2911_BETA2\FCS_ReBorn\FCS_ReBorn\FCS_ReBorn\obj\Debug\FCS_ReBorn.exe
+D:\S60\Toradex\Project\SYSTEM AKHIR KAYANYA SIH\06-12-2020\06-12-2020\FCS_ReBorn_2911_BETA2\FCS_ReBorn\FCS_ReBorn\FCS_ReBorn\obj\Debug\FCS_ReBorn.pdb
