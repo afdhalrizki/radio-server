@@ -210,6 +210,19 @@ namespace FCS_ReBorn
                     {
                         parsingForStatus(output.Substring(2, output.Length - 2), 4);
                     }
+                    ///Penambahan Komando
+                    else if (output.Substring(0, 2).CompareTo("C1") == 0) 
+                    {
+                    }
+                    else if (output.Substring(0, 2).CompareTo("C2") == 0) 
+                    {
+                    }
+                    else if (output.Substring(0, 2).CompareTo("C3") == 0) 
+                    {
+                    }
+                    else if (output.Substring(0, 2).CompareTo("C4") == 0) 
+                    {
+                    }
                 }
                 catch
                 {
@@ -242,9 +255,7 @@ namespace FCS_ReBorn
                 MessageBox.Show("Could not read COM Port");
                 return;
             }
-
         }
-
         private void serialPort2_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
             try
@@ -264,9 +275,7 @@ namespace FCS_ReBorn
             {
                 MessageBox.Show("Could not read COM Port");
             }
-
         }
-
         private void timer1_Tick(object sender, EventArgs e)
         {
 
@@ -300,9 +309,7 @@ namespace FCS_ReBorn
                     int serial_no = 1;
                     parsingSerial(tempData, serial_no);
                 }
-
             }
-            
             if (buffertcpcount < 1)
             {
                 buffertcpcount++;
@@ -314,8 +321,6 @@ namespace FCS_ReBorn
                 buffertcpdata3 += bufferhandle3;
                 //buffertcp4
                 buffertcpdata4 += bufferhandle4;
-
-
             }
             else
             {
