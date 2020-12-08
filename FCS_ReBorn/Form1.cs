@@ -179,7 +179,8 @@ namespace FCS_ReBorn
         /// <summary>
         /// Prosedur pemrosesan queue
         /// </summary>
-        /// <param name="output"></param>
+        /// <param name="output"></param>\\
+        /// Output akan dikeluarkan sebagai data string
         private void processQueue(string output)
         {
             if (dataCOM.Count > 0)
