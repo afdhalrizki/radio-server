@@ -123,7 +123,9 @@ namespace FCS_ReBorn
             meriam2Status.Text = "Disconnected.";
             meriam3Status.Text = "Disconnected.";
             meriam4Status.Text = "Disconnected.";
-
+            ///
+            /// RESERVED
+            ///
             
             // Open all meriam ports
             openServerPorts();
