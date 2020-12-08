@@ -185,25 +185,32 @@ namespace FCS_ReBorn
                 output = dataCOM.Dequeue();
                 datatoTCP = output;
                 //Pemilihan metode pemrosesan data antrian sistem
-                if (output.Substring(0, 2).CompareTo("S1") == 0)
+                try //Penambahan try catch agar system tidak error saat gagal
                 {
-                    parsingSerial(output.Substring(2, output.Length - 2), 1);
+                    if (output.Substring(0, 2).CompareTo("S1") == 0)
+                    {
+                        parsingSerial(output.Substring(2, output.Length - 2), 1);
+                    }
+                    else if (output.Substring(0, 2).CompareTo("M1") == 0)
+                    {
+                        parsingForStatus(output.Substring(2, output.Length - 2), 1);
+                    }
+                    else if (output.Substring(0, 2).CompareTo("M2") == 0)
+                    {
+                        parsingForStatus(output.Substring(2, output.Length - 2), 2);
+                    }
+                    else if (output.Substring(0, 2).CompareTo("M3") == 0)
+                    {
+                        parsingForStatus(output.Substring(2, output.Length - 2), 3);
+                    }
+                    else if (output.Substring(0, 2).CompareTo("M4") == 0)
+                    {
+                        parsingForStatus(output.Substring(2, output.Length - 2), 4);
+                    }
                 }
-                else if (output.Substring(0, 2).CompareTo("M1") == 0)
+                catch
                 {
-                    parsingForStatus(output.Substring(2, output.Length - 2), 1);
-                }
-                else if (output.Substring(0, 2).CompareTo("M2") == 0)
-                {
-                    parsingForStatus(output.Substring(2, output.Length - 2), 2);
-                }
-                else if (output.Substring(0, 2).CompareTo("M3") == 0)
-                {
-                    parsingForStatus(output.Substring(2, output.Length - 2), 3);
-                }
-                else if (output.Substring(0, 2).CompareTo("M4") == 0)
-                {
-                    parsingForStatus(output.Substring(2, output.Length - 2), 4);
+                    return;
                 }
                 
             }
