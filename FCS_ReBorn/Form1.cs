@@ -24,8 +24,6 @@ namespace FCS_ReBorn
         int FCSElevation;
 
         private const Int32 bufferSize = 65535;
-
-
         // Server IP for receiving client data
         private IPAddress ipAddressServerBind = null;
 
@@ -213,15 +211,19 @@ namespace FCS_ReBorn
                     ///Penambahan Komando
                     else if (output.Substring(0, 2).CompareTo("C1") == 0) 
                     {
+                       
                     }
                     else if (output.Substring(0, 2).CompareTo("C2") == 0) 
                     {
+
                     }
                     else if (output.Substring(0, 2).CompareTo("C3") == 0) 
                     {
+
                     }
                     else if (output.Substring(0, 2).CompareTo("C4") == 0) 
                     {
+
                     }
                 }
                 catch
@@ -810,7 +812,6 @@ namespace FCS_ReBorn
              * Checking client connection to Meriam 3
              * 
              * **/
-
             //Accept client 3
             if (tcpListener3.Pending() && serverConnected3 == false)
             {
@@ -830,7 +831,6 @@ namespace FCS_ReBorn
                                                     IPAddress.Parse(clientConnected3.Address.ToString()) +
                                                     "Send/Receive failure.";
                 }
-
                 serverConnected3 = true;
             }
 
@@ -1466,13 +1466,12 @@ namespace FCS_ReBorn
              * **/
             try
             {
-                networkStreamConnectedClient1.Write(serverTransmitBuffer, 0, totalNumberOfBytes);        ///< Sends data.                                
+                networkStreamConnectedClient1.Write(serverTransmitBuffer, 0, totalNumberOfBytes);        ///< Sends data.       
             }
             catch (SystemException)
             {
                 serverConnected1 = false;//return;
             }
-
 
             /**
              * Streaming to Meriam 2
