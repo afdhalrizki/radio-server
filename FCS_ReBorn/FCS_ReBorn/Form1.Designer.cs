@@ -191,6 +191,7 @@
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.serialPort2 = new System.IO.Ports.SerialPort(this.components);
             this.timerParse = new System.Windows.Forms.Timer();
+            this.timerkirim = new System.Windows.Forms.Timer();
             this.tabPage2.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage30.SuspendLayout();
@@ -1501,6 +1502,10 @@
             this.timerParse.Enabled = true;
             this.timerParse.Tick += new System.EventHandler(this.timerParse_Tick);
             // 
+            // timerkirim
+            // 
+            this.timerkirim.Tick += new System.EventHandler(this.timerkirim_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -1694,6 +1699,7 @@
         private System.Windows.Forms.TextBox textBox34;
         private System.Windows.Forms.TextBox textBox23;
         private System.Windows.Forms.TextBox textBox22;
+        private System.Windows.Forms.Timer timerkirim;
 
     }
 }

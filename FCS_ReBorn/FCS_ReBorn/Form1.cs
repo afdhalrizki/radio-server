@@ -130,6 +130,7 @@ namespace FCS_ReBorn
 
             timer1.Enabled = true;
             timerParse.Enabled = true;
+            timerkirim.Enabled = true;
         }
         
         private void Form1_Closed(object sender, EventArgs e)
@@ -157,7 +158,7 @@ namespace FCS_ReBorn
 
                 serialPort1.PortName = "COM1";
                 serialPort1.BaudRate = 115200;
-                serialPort1.ReadTimeout = 2000;
+                //serialPort1.ReadTimeout = 2000;
                 serialPort1.Open();
 
                 serialPort2.PortName = "COM2";
@@ -187,25 +188,28 @@ namespace FCS_ReBorn
                 textBox4.Text = output;
                 datatoTCP = output;
                 //Pemilihan metode pemrosesan data antrian sistem
-                if (output.Substring(0, 2).CompareTo("S1") == 0)
+                if (output != null)
                 {
-                    parsingSerial(output.Substring(2, output.Length - 2), 1);
-                }
-                else if (output.Substring(0, 2).CompareTo("M1") == 0)
-                {
-                    parsingForStatus(output.Substring(2, output.Length - 2), 1);
-                }
-                else if (output.Substring(0, 2).CompareTo("M2") == 0)
-                {
-                    parsingForStatus(output.Substring(2, output.Length - 2), 2);
-                }
-                else if (output.Substring(0, 2).CompareTo("M3") == 0)
-                {
-                    parsingForStatus(output.Substring(2, output.Length - 2), 3);
-                }
-                else if (output.Substring(0, 2).CompareTo("M4") == 0)
-                {
-                    parsingForStatus(output.Substring(2, output.Length - 2), 4);
+                    if (output.Substring(0, 2).CompareTo("S1") == 0)
+                    {
+                        parsingSerial(output.Substring(2, output.Length - 2), 1);
+                    }
+                    else if (output.Substring(0, 2).CompareTo("M1") == 0)
+                    {
+                        parsingForStatus(output.Substring(2, output.Length - 2), 1);
+                    }
+                    else if (output.Substring(0, 2).CompareTo("M2") == 0)
+                    {
+                        parsingForStatus(output.Substring(2, output.Length - 2), 2);
+                    }
+                    else if (output.Substring(0, 2).CompareTo("M3") == 0)
+                    {
+                        parsingForStatus(output.Substring(2, output.Length - 2), 3);
+                    }
+                    else if (output.Substring(0, 2).CompareTo("M4") == 0)
+                    {
+                        parsingForStatus(output.Substring(2, output.Length - 2), 4);
+                    }
                 }
                 
             }
@@ -216,8 +220,8 @@ namespace FCS_ReBorn
             try
             {
                 //int serialNo = 1;
-                dataCOM.Enqueue("S1"+serialPort1.ReadExisting());
-                //dataSerialIn = serialPort1.ReadExisting();
+                //dataCOM.Enqueue("S1"+serialPort1.ReadExisting());
+                dataSerialIn = serialPort1.ReadExisting();
                 //datatoTCP = dataSerialIn;
 
                 //if (dataSerialIn.Length != 0)
@@ -228,6 +232,32 @@ namespace FCS_ReBorn
                 //        parsingSerial(datatoTCP, serialNo);
                 //    });
                 //}
+
+                if (dataSerialIn.Length > 1)
+                {
+                    bufferhandle1 += dataSerialIn;
+                    if (bufferhandle1.Length > 17)
+                    {
+                        //try
+                        //{
+                        //    this.Invoke((System.Threading.ThreadStart)delegate
+                        //    {
+                                string[] dataq = bufferhandle1.Split('\n');
+                                foreach (string word in dataq)
+                                {
+                                    dataCOM.Enqueue("S1" + word + '\n');
+                                }
+                                bufferhandle1 = string.Empty;
+                        //        { }
+
+                        //    });
+                        //}
+                        //catch
+                        //{
+                           
+                        //}
+                    }
+                }
             }
             catch
             {
@@ -241,16 +271,7 @@ namespace FCS_ReBorn
         {
             try
             {
-                dataSerialIn = serialPort2.ReadExisting(); ;
-                int serialNo = 2;
-
-                if (dataSerialIn.Length != 0)
-                {
-                    this.Invoke((System.Threading.ThreadStart)delegate
-                    {
-                        parsingSerial(dataSerialIn, serialNo);
-                    });
-                }
+                dataCOM.Enqueue("S2" + serialPort2.ReadExisting());
             }
             catch
             {
@@ -280,17 +301,11 @@ namespace FCS_ReBorn
                 // Check all meriam clients connection
                 //this.Invoke((System.Threading.ThreadStart)delegate
                 //{
+
                     checkClientsConnection();
                 //});
 
                 //checkClientsConnection();
-                //if (datatoTCP == null)
-                //{
-                    string tempData = "*1,1@1$1&456(789#\n";
-                    int serial_no = 1;
-                    parsingSerial(tempData, serial_no);
-                //}
-
             }
             
             if (buffertcpcount < 1)
@@ -345,13 +360,13 @@ namespace FCS_ReBorn
         }
         private void parsingForStatus(string bufferdata, int meriam)
         {
-            this.Invoke((System.Threading.ThreadStart)delegate //Kalo ga make thread bakal blocking algoritma lainnya
-            {
+            //this.Invoke((System.Threading.ThreadStart)delegate //Kalo ga make thread bakal blocking algoritma lainnya
+            //{
                 bool thereisdata = false;
                 if (bufferdata.Length > 0)
                 {
                     int idx = 0;
-                    while ((idx < bufferdata.Length) || !(thereisdata))
+                    while ((idx < bufferdata.Length) && !(thereisdata))
                     {
                         if (bufferdata[idx] == '*')
                         {
@@ -404,7 +419,7 @@ namespace FCS_ReBorn
                         //}
                     }
                 }
-            });
+            //});
         }
 
         private void showGunAzimuth(int gun, string azimuth)
@@ -1410,6 +1425,16 @@ namespace FCS_ReBorn
         private void timerParse_Tick(object sender, EventArgs e)
         {
             processQueue(datatoTCP); 
+        }
+
+        private void timerkirim_Tick(object sender, EventArgs e)
+        {
+            if (datatoTCP == null)
+            {
+                string tempData = "*1,1@0$0&456(789#\r\n";
+                int serial_no = 1;
+                parsingSerial(tempData, serial_no);
+            }
         }
     }
 }
